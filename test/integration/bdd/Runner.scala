@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
   * Project:         sbt-playCukes
   */
 @CucumberOptions(features = Array("test/integration/bdd/features"), glue = Array("integration.bdd.stories"),
-  plugin = Array("pretty", "html:test/integration/bdd/report"))
+  plugin = Array("pretty", "html:test/integration/bdd/report"), tags = Array("@dev"))
 @RunWith(classOf[Cucumber])
 class Runner {
 
